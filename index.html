@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<h1>TO DO LIST</h1>
+<input type="text" id="newtask">
+
+<button type="button" onclick="addtask()">+</button>
+<br>
+
+<script>
+
+function addtask() {
+
+var newtask = document.getElementById("newtask").value;
+
+var element = document.createElement("div");
+var newbutton = document.createElement("button");
+newbutton.innerText = "Delete"
+element.innerText = newtask ;
+
+document.body.appendChild(element);
+document.body.appendChild(newbutton);
+
+newbutton.addEventListener("click", function() {
+element.remove();
+newbutton.remove();
+});
+
+}
+
+</script>
+</body>
+</html>

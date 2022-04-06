@@ -1,0 +1,41 @@
+body {
+    background-color:wheat;
+    text-align: center;
+}
+
+div {
+    margin: auto;
+    height: fit-content;
+    width:fit-content;
+    max-width:600px;
+    padding: 5px;
+    background-color: black;
+    color: wheat;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+input {
+    height:30px;
+    width: 200px;
+}
+
+button {
+    height:fit-content;
+    width:fit-content;
+    border: none;
+    margin: auto;
+    margin-top: 1px;
+    background-color: black;
+    color: wheat;
+    padding: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
